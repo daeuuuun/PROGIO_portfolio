@@ -1,0 +1,13 @@
+.logoContainer {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .logoImage {
+    transition: opacity 0.4s ease;
+    opacity: 0;
+  }
+  
+  .visible {
+    opacity: 1;
+  }
