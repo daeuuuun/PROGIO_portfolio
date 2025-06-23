@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import IntroPanel from './IntroPanel';
 import styles from './Main.module.css';
+import prugio_apt from './Prugio_apt.jpg';
+import prugio_apt2 from './Prugio_apt2.jpg';
 
 const Main = () => {
   const [shrink, setShrink] = useState(false);
@@ -23,7 +25,7 @@ const Main = () => {
       </div>
 
       <div className={styles.right}>
-        <video
+        {<video
             className={styles.backgroundVideo}
             src="/video/PRUGIO_for_Women.mp4"
             autoPlay
@@ -31,6 +33,8 @@ const Main = () => {
             loop
             playsInline
         />
+        // <img className={styles.backgroundImage} src={prugio_apt2}></img>
+        }
       </div>
     </div>
   );
