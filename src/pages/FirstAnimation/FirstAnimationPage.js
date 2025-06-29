@@ -1,6 +1,6 @@
 import React from 'react';
-import LogoAnimation from './LogoAnimation';
-import styles from './FirstAnimation.module.css';
+import LogoAnimation from '../../containers/FirstAnimationPage/LogoAnimation';
+import styles from '../style/FirstAnimation.module.css';
 
 const FirstAnimation = () => {
   return (

@@ -1,17 +1,12 @@
 import React from 'react';
-//import styles from '../Header/Header.module.css';
-import PRUGIO_Logo from './Prugio_bI.png';
+import styles from './Header.module.css';
 
 const Header = () => {
   return (
-    <>
-      <div>
-        <div>
-          <img src={PRUGIO_Logo} alt="로고"></img>
-        </div>
-      </div>
-    </>
-  )
-}
+    <header className={styles.header}>
+      <img src="/img/Prugio_bI.png" alt="Prugio Logo" className={styles.logo} />
+    </header>
+  );
+};
 
 export default Header;

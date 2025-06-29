@@ -2,21 +2,19 @@ import React from 'react';
 import styles from './IntroPanel.module.css';
 import LogoAnimation from '../FirstAnimationPage/LogoAnimation';
 
-const IntroPanel = () => {
+const IntroPanel = ({ shrink }) => {
   return (
-    <div className={styles.panel}>
+    <div className={`${styles.panel} ${shrink ? styles.shrink : ''}`}>
       <video
-        className={styles.video}
+        className={`${styles.backgroundVideo} ${shrink ? styles.fadeOut : ''}`}
         src="/video/FirstBackground.mp4"
         autoPlay
         muted
         playsInline
-      />
-      <div className={styles.content}>
-        <LogoAnimation/>
-        <p className={styles.subText}>
-          견고한 기본에 더해진 세련된 편안함, 내 삶의 본연을 집에서 찾다
-        </p>
+/>
+
+      <div className={`${styles.content} ${shrink ? styles.shrinkContent : ''}`}>
+        <LogoAnimation shrink={shrink} />
       </div>
     </div>
   );

@@ -1,13 +1,24 @@
 .logoContainer {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .logoImage {
-    transition: opacity 0.4s ease;
-    opacity: 0;
-  }
-  
-  .visible {
-    opacity: 1;
-  }
+  display: flex;
+  gap: 1rem;
+  transition: transform 1s ease;
+}
+
+.shrinkLogoContainer {
+  transform: scale(0.8);
+}
+
+.logoImage {
+  width: auto;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.shrinkLogo {
+  height: 80px;
+}
+
+.visible {
+  opacity: 1;
+}

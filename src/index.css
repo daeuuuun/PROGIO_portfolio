@@ -58,13 +58,21 @@
   src: url('./fonts/Pretendard-Thin.ttf');
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar { 
+  display: none; 
+}
+
 body {
   margin: 0;
   font-family: 'GmarketSans', 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scrollbar-width: none;
 }
 
 code {
