@@ -1,6 +1,6 @@
 .logoContainer {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   transition: transform 1s ease;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .shrinkLogo {
-  height: 80px;
+  height: 90px;
 }
 
 .visible {

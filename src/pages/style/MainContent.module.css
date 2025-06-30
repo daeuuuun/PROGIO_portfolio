@@ -3,6 +3,7 @@
   height: 90vh;
   padding-top: 10vh;
   overflow: hidden;
+  background-color: #f8f9f8;
 }
 
 .leftSection,
@@ -15,8 +16,15 @@
   overflow: hidden;
 }
 
-.leftSection { width: 50%; }
-.secondSection { width: 0; opacity: 0; }
+.leftSection {
+  width: 50%; 
+}
+
+.secondSection {
+  width: 0;
+  opacity: 0;
+}
+
 .secondTextSection {
   width: 50%;
   opacity: 1;
@@ -24,7 +32,12 @@
   justify-content: center;
   align-items: center;
 }
-.thirdWrapperSection { width: 0; opacity: 0; display: flex; }
+
+.thirdWrapperSection {
+  width: 0;
+  opacity: 0; 
+  display: flex; 
+}
 
 .thirdImageSection, .thirdTextSection {
   width: 50%;
@@ -44,31 +57,69 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  font-size: 1.2rem;
-  text-align: center;
+  transform: translate(-50%, 220%);
   opacity: 0;
   transition: opacity 0.8s ease;
   max-width: 80%;
 }
 
 .textBox {
-  padding: 2rem;
-  font-family: Pretendard-Light, sans-serif;
-  font-size: 1.2rem;
-  color: black;
-  text-align: center;
+  padding: 5rem;
+  transform: translateY(-50%);
 }
 
-.scrolled1 .leftSection { width: 25%; }
-.scrolled1 .overlayText { opacity: 1; }
-.scrolled1 .secondSection { width: 37.5%; opacity: 1; }
-.scrolled1 .secondTextSection { width: 37.5%; opacity: 1; }
+.scrolled1 .leftSection { 
+  width: 25%; 
+}
 
-.scrolled2 .leftSection { width: 25%; }
-.scrolled2 .overlayText { opacity: 1; }
-.scrolled2 .secondSection { width: 25%; opacity: 1; }
-.scrolled2 .secondOverlayText { opacity: 1; }
-.scrolled2 .secondTextSection { width: 0; opacity: 0; }
-.scrolled2 .thirdWrapperSection { width: 50%; opacity: 1; }
+.scrolled1 .overlayText { 
+  opacity: 1; 
+}
+
+.scrolled1 .secondSection { 
+  width: 37.5%; 
+  opacity: 1; 
+}
+
+.scrolled1 .secondTextSection { 
+  width: 37.5%; 
+  opacity: 1; 
+}
+
+.scrolled2 .leftSection { 
+  width: 25%; 
+}
+
+.scrolled2 .overlayText { 
+  opacity: 1; 
+}
+
+.scrolled2 .secondSection { 
+  width: 25%; 
+  opacity: 1; 
+}
+
+.scrolled2 .secondOverlayText { 
+  opacity: 1; 
+}
+
+.scrolled2 .secondTextSection { 
+  width: 0; 
+  opacity: 0; 
+}
+
+.scrolled2 .thirdWrapperSection { 
+  width: 50%; 
+  opacity: 1; 
+}
+
+h1 {
+  font-family: 'NotoSansKR-Regular';
+  font-size: 30px;
+  color: black;
+}
+
+span {
+    font-family: 'NotoSansKR-Light';
+    font-size: 18px;
+}
