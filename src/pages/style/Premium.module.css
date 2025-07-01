@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e6decf;
+  height: 94.5vh;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+}
+
+.mainContentWrapper {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.leftSide {
+  padding: 1rem;
+  width: 40%;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+.textBlock h3 {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #555;
+}
+
+.textBlock h1 {
+  font-size: 3rem;
+  font-family: 'EB Garamond', serif;
+  margin-top: 0.5rem;
+  color: #222;
+}
+
+.textBlock h2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.textBlock p {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.centerImage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 70%;
+  padding: 1rem;
+  overflow: hidden;
+  height: 60vh;
+  min-height: 400px;
+}
+
+.imageWrapper {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.mainImage {
+  width: 100%;
+  height: 60vh;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.navButton {
+  background: #004f47;
+  border: none;
+  color: #e6decf;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.navButton:hover {
+  background: #555;
+}
+
+@media (max-width: 1080px) {
+  .mainContentWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .centerImage {
+    margin-top: 2rem;
+  }
+}

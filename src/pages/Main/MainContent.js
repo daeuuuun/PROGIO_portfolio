@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from '../style/MainContent.module.css';
 
 const MainContent = () => {
   const [currentStep, setCurrentStep] = useState(0);
+  const [isAnimationDone, setIsAnimationDone] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleWheel = (e) => {
@@ -13,9 +16,36 @@ const MainContent = () => {
         setCurrentStep((prev) => Math.max(prev - 1, 0));
       }
     };
+
     window.addEventListener('wheel', handleWheel, { passive: false });
     return () => window.removeEventListener('wheel', handleWheel);
   }, []);
+
+  useEffect(() => {
+    if (currentStep === 2 && !isAnimationDone) {
+      const timer = setTimeout(() => {
+        setIsAnimationDone(true);
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [currentStep, isAnimationDone]);
+
+  useEffect(() => {
+    if (!isAnimationDone) return;
+
+    const handleScrollToPremium = (e) => {
+      e.preventDefault();
+      navigate('/premium');
+    };
+
+    window.addEventListener('wheel', handleScrollToPremium, { once: true });
+    window.addEventListener('touchmove', handleScrollToPremium, { once: true });
+
+    return () => {
+      window.removeEventListener('wheel', handleScrollToPremium);
+      window.removeEventListener('touchmove', handleScrollToPremium);
+    };
+  }, [isAnimationDone, navigate]);
 
   return (
     <div
@@ -83,8 +113,8 @@ const MainContent = () => {
             <span>
               지친 하루를 마치고 가장 나에 가까운 본연의 모습으로
               돌아와 누리는 세련된 편안함.
-              푸르지오가 그리는 프리미엄 입니다.            
-          </span>
+              푸르지오가 그리는 프리미엄 입니다.
+            </span>
           </div>
         </div>
       </div>
