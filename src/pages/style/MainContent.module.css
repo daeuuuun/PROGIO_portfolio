@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('//fonts.googleapis.com/earlyaccess/nanummyeongjo.css');
+
 .mainContainer {
   display: flex;
   height: 90vh;
@@ -114,12 +117,14 @@
 }
 
 h1 {
-  font-family: 'NotoSansKR-Regular';
+  font-family: 'NanumMyeongjo';
   font-size: 30px;
-  color: black;
+  letter-spacing: 1px;
+  color: #222;
 }
 
 span {
-    font-family: 'NotoSansKR-Light';
+    font-family: 'EB Garamond', serif;
     font-size: 18px;
+    color: #333;
 }

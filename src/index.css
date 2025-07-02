@@ -103,6 +103,31 @@
   src: url('./fonts/NotoSansKR-Thin.ttf');
 }
 
+@font-face {
+  font-family: 'HeiroBold';
+  src: url('./fonts/HeirofLightBold.ttf');
+}
+
+@font-face {
+  font-family: 'HeiroRegular';
+  src: url('./fonts/HeirofLightRegular.ttf');
+}
+
+@font-face {
+  font-family: 'NanumMyeongjo';
+  src: url('./fonts/NanumMyeongjo.ttf');
+}
+
+@font-face {
+  font-family: 'NanumMyeongjoBold';
+  src: url('./fonts/NanumMyeongjoBold.ttf');
+}
+
+@font-face {
+  font-family: 'NanumMyeongjoExtraBold';
+  src: url('./fonts/NanumMyeongjoExtraBold.ttf');
+}
+
 html, body {
   overflow-x: hidden;
 }
