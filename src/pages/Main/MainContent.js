@@ -109,7 +109,7 @@ const MainContent = () => {
         </div>
         <div className={styles.thirdTextSection}>
           <div className={styles.textBox}>
-            <h1>가장 나에 가까운 본연의 모습</h1>
+            <h1>가장 나에 가까운<br/>본연의 모습</h1>
             <span>
               지친 하루를 마치고 가장 나에 가까운 본연의 모습으로
               돌아와 누리는 세련된 편안함.
